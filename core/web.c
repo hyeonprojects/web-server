@@ -14,6 +14,8 @@ int main(int argc, char *argv[]) {
     struct sockaddr_in serv_addr;
     struct sockaddr_in clnt_addr;
 
+	sockelen_t clnt_addr_size;
+
     if(argc != 3) {
         printf("Usage: %s <IP> <port>\n", argv[0]);
         exit(1);
